@@ -6,7 +6,8 @@ I wrote this engine using two Javascript libraries.
 
 # How it works
 This program uses a minimax function with alpha-beta pruning with a user input depth. The more the depth, the better is the engine. The alpha-beta pruning optimises the code to make it faster and use less resources by not checking "bad" moves (moves with really bad evaluation).
-This code can be made better with a better evaluation and maybe referring a table of opening moves so that it doesn't have to calculate openings and just focus on middle and endgame.
+This code can be made better with a better evaluation and maybe referring a table of opening moves so that it doesn't have to calculate openings and just focus on middle and endgame. 
+The code for the engine is in the file chessEngine.js
 
 # Try it out !
 [Click here to try out the engine!](https://greatestchessengine.netlify.app/)
