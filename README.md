@@ -1,4 +1,4 @@
-# Chess-Engine
+# Greatest-Chess-Engine
 A basic chess engine website.
 I wrote this engine using two Javascript libraries.
 [chessboard.js](https://chessboardjs.com) to display the board, make it interactive and the drag the pieces to move them.
