@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="files/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="files/chessboardjs/css/chessUI.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> <!-- Header text font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> <!-- Move Info text font-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> <!-- Information text font-->
+</head>
+<div class="invisible-layer">
+    <body bgcolor="#312E2B">
+    <div class="header">    
+    <h1 class = "heading-Text">Greatest Chess Engine</h1> 
+        <div class="fillSpace"></div>
+            <div class="icons">
+                <a href="https://github.com/Sushmey" target="_blank" rel="noopener referrer"><img src="icons/github.png" id="github"></a>
+                <a href="https://www.linkedin.com/in/sushmey-nirmal" target="_blank" rel="noopener referrer"><img src="icons/linkedin.png" id="linkedin"></a>
+            </div>    
+        </div>   
+    <div style="display: flex; padding-top: 20px;">
+        <div class="center">
+            <div id="board" class="board" style="flex-grow: 2;"></div>
+        </div>
+    <div class="center" style="flex-grow: 1;align-self: center;">
+    <div class="info">
+        Search depth:
+        <select id="search-depth">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <br>
+        <span>Positions evaluated: <span id="position-count"></span></span>
+        <br>
+        <span>Time: <span id="time"></span></span>
+        <br>
+        <span>Positions/s: <span id="positions-per-s"></span> </span>
+        <br>
+        <br>
+        <div class= "wrapper"><button id= "reload" onclick="window.location.reload()"> New game </button></div>
+        <br>
+        <div id="move-history" class="move-history"></div>
+    </div>
+    </div>
+    </div>
+    <script src="files/jquery/jquery-3.2.1.min.js"></script>
+    <script src="files/chessboardjs/js/chess.js"></script>
+    <script src="files/chessboardjs/js/chessboard-0.3.0.js"></script>
+    <script src="ChessEngine.js"></script>
+    <script>
+
+    </script>
+    </body>
+</div>    
+</html>
